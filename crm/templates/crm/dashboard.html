@@ -1,0 +1,42 @@
+{% extends "crm/main.html" %}
+{% block content %}
+{% include "crm/status.html" %}
+<br>
+ <div class="row">
+     <div class="col-md-5">
+         <h5>Customer</h5>
+         <hr>
+         <div class=" card card-body">
+             <a href="" class="btn btn-primary btn-sm btn-block">Create Customer</a>
+             <table>
+                 <tr>
+                     <th></th>
+                     <th>Customer</th>
+                     <th>Orders</th>
+                 </tr>
+             </table>
+
+         </div>
+
+     </div>
+     <div class="col-md-7">
+        <h5>Last 5 Orders</h5>
+        <hr>
+        <div class=" card card-body">
+            <a href="" class="btn btn-primary btn-sm btn-block">Create Customer</a>
+            <table>
+                <tr>
+                    <th>Products</th>
+                    <th>Date Oredered</th>
+                    <th>Status</th>
+                    <th>Update</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+ </div>
+{% endblock content %}
