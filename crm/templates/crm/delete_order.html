@@ -1,0 +1,10 @@
+{% extends "crm/main.html" %}
+{% load static %}
+{% block content %}
+  <p>Are you sure  you want to delete the <b>{{item}}</b></p>
+  <form action="" method="POST">
+      {% csrf_token %}
+      <a href="{% url 'home' %}">Cancel</a>
+      <input type="submit" name="Confirm" id="">
+  </form>
+{% endblock content %}
